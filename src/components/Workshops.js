@@ -36,9 +36,13 @@ export default class Workshops extends React.Component {
                     coleccionables.
                   </p>
                   <div className="d-flex justify-content-between align-items-center">
-                    <button type="button" className="btn btn-danger btn-block">
-                      View
-                    </button>
+                    <Button
+                      className="btn btn-danger btn-block"
+                      href="https://www.meetup.com/buidl-tegucigalpa/events/261807583/"
+                      target="blank"
+                    >
+                      Join
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -73,7 +77,7 @@ export default class Workshops extends React.Component {
                   </div>
                 </div>
               </div>
-            </div>{" "}
+            </div>
             <div className="col-md-4">
               <div className="card mb-4 shadow-sm">
                 <img

@@ -16,21 +16,31 @@ export default class Sponsors extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-sm">
-              <img src={buidl} alt="..." className="vertical" />
+              <a href="http://buidlhonduras.com/" target="blank">
+                <img src={buidl} alt="..." className="vertical" />
+              </a>
             </div>
             <div className="col-sm">
-              <img src={affogato} alt="..." className="horizontal" />
+              <a href="https://affogato.co/" target="blank">
+                <img src={affogato} alt="..." className="horizontal" />
+              </a>
             </div>
             <div className="col-sm">
-              <img src={cocomfy} alt="..." className="horizontal" />
+              <a href="http://cocomfy.com/" target="blank">
+                <img src={cocomfy} alt="..." className="horizontal" />
+              </a>
             </div>
           </div>
           <div className="row">
             <div className="col-sm">
-              <img src={widu} alt="..." className="horizontal" />
+              <a href="https://www.widu.io/" target="blank">
+                <img src={widu} alt="..." className="horizontal" />
+              </a>
             </div>
             <div className="col-sm">
-              <img src={impact} alt="..." className="vertical" />
+              <a href="https://tegucigalpa.impacthub.net/" target="blank">
+                <img src={impact} alt="..." className="vertical" />
+              </a>
             </div>
           </div>
         </div>

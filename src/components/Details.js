@@ -18,7 +18,7 @@ export default class Details extends React.Component {
               good time while creating, networking and getting feedback on what
               we do.
             </p>
-            <Button color="danger" size="lg" href="#">
+            <Button color="danger" size="lg" href="#workshops">
               Participate in the Workshops
             </Button>
           </div>
