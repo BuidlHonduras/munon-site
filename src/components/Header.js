@@ -12,10 +12,10 @@ export default class Header extends React.Component {
           rewards you with tangible and transparent feedback.
         </p>
         <div className="mt-4">
-          <Button color="danger" size="lg">
+          <Button color="danger" size="lg" disabled>
             Hack in TGU
           </Button>
-          <Button color="danger" size="lg" className="ml-4">
+          <Button color="danger" size="lg" className="ml-4" disabled>
             Hack in SPS
           </Button>
         </div>

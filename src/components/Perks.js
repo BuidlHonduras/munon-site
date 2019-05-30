@@ -3,7 +3,7 @@ import swag from "../images/swag.jpg";
 import pot from "../images/pot.png";
 import team from "../images/team.jpg";
 
-export default class Header extends React.Component {
+export default class Perks extends React.Component {
   render() {
     return (
       <div className="row perks" id="perks">

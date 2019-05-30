@@ -31,12 +31,12 @@ export default class Navigation extends React.Component {
     return (
       <div>
         <Navbar color="white" light expand="md">
-          <NavbarBrand href="/">El Hackathon Muñón</NavbarBrand>
+          <NavbarBrand href="#">El Hackathon Muñón</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/" className="primary">
+                <NavLink href="#header" className="primary">
                   Register
                 </NavLink>
               </NavItem>
@@ -46,19 +46,20 @@ export default class Navigation extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="" className="primary">
+                <NavLink href="#workshops" className="primary">
                   Workshops
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="" className="primary">
+                <NavLink href="#sponsors" className="primary">
                   Sponsors
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://github.com/reactstrap/reactstrap"
+                  href="https://github.com/Turupawn/HackathonMunon"
                   className="primary"
+                  target="blank"
                 >
                   GitHub
                 </NavLink>
