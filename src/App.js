@@ -9,10 +9,16 @@ import "./App.scss";
 import Workshops from "./components/Workshops";
 import Donations from "./components/Donations";
 import Footer from "./components/Footer";
+import { Helmet } from "react-helmet";
+import logo from "./logo.png";
 
 function App() {
   return (
     <Container className="App">
+      <Helmet>
+        <meta property="twitter:image" content={logo} />
+        <meta property="og:image" content={logo} />
+      </Helmet>
       <Navigation />
       <Header />
       <Perks />
