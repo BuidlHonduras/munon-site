@@ -79,7 +79,7 @@ export default class Donations extends React.Component {
                 alt="..."
                 className="horizontal img-thumbnail rounded-circle"
               />
-              <p>Oscar Presidente</p>
+              <p>Robert Mudgett</p>
             </div>
             <div className="col-sm">
               <img

@@ -2,6 +2,8 @@ import React from "react";
 import { Button } from "reactstrap";
 import logo from "../logo.png";
 import erc20 from "../images/erc20.png";
+import ipfs from "../images/IPFS.png";
+import vue from "../images/vue.png";
 
 export default class Workshops extends React.Component {
   render() {
@@ -50,30 +52,32 @@ export default class Workshops extends React.Component {
             <div className="col-md-4">
               <div className="card mb-4 shadow-sm">
                 <img
-                  src={logo}
+                  src={ipfs}
                   width="100%"
                   height="225"
                   background="#55595c"
                   color="#eceeef"
-                  className="card-img-top tba"
+                  className="card-img-top "
                   text="Thumbnail"
                 />
                 <div className="card-body">
                   <h5 className="card-title mb-0">
-                    Taller: Introducción a Solidity
+                    Taller: Web del Mañana, IPFS
                   </h5>
-                  <small className="text-muted">TBA - SPS</small>
+                  <small className="text-muted">June 21 - Online</small>
                   <p className="card-text mt-2">
-                    Aprende a crear tu primer Aplicación decentralizada en
-                    Ethereum.
+                    Aprende a usar un sistema distribuido para guardar archivos
+                    o publicar aplicaciones decentralizadas usando el
+                    InterPlanetary File System (IPFS).
                   </p>
                   <div className="d-flex justify-content-between align-items-center">
-                    <button
-                      type="button"
-                      className="btn btn-danger btn-block disabled"
+                    <Button
+                      className="btn btn-danger btn-block"
+                      href="https://www.meetup.com/buidl-tegucigalpa/events/261931532/"
+                      target="blank"
                     >
-                      To be Announced
-                    </button>
+                      Join
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -81,30 +85,32 @@ export default class Workshops extends React.Component {
             <div className="col-md-4">
               <div className="card mb-4 shadow-sm">
                 <img
-                  src={logo}
+                  src={vue}
                   width="100%"
                   height="225"
                   background="#55595c"
                   color="#eceeef"
-                  className="card-img-top tba"
+                  className="card-img-top "
                   text="Thumbnail"
                 />
                 <div className="card-body">
                   <h5 className="card-title mb-0">
-                    Taller: IPFS, Archivos en el Blockchain
+                    Taller: Contratos Inteligentes
                   </h5>
-                  <small className="text-muted">TBA - Online</small>
+                  <small className="text-muted">June 7 - SPS</small>
                   <p className="card-text mt-2">
-                    Aprende a guardar archivos o publicar páginas
-                    decentralizadas usando IPFS.
+                    Aprende a crear tu primer contrato inteligente y app
+                    decentralizada en el Blockchain de Ethereum usando Solidity
+                    y Vue js.
                   </p>
                   <div className="d-flex justify-content-between align-items-center">
-                    <button
-                      type="button"
-                      className="btn btn-danger btn-block disabled"
+                    <Button
+                      className="btn btn-danger btn-block"
+                      disabled
+                      target="blank"
                     >
                       To be Announced
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </div>
