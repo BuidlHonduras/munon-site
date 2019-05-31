@@ -15,7 +15,7 @@ export default class Donations extends React.Component {
         <h1>Contributors</h1>
         <p className="mt-4">
           Muñón is only posible with the support of the Community, if you wish
-          to make a donation to the pot or back the Hackathon send an email to:
+          to make a donation to the pot or back the Hackathon send an email to:{" "}
           <a href="mailto:ceegarner@gmail.com" className="primary">
             ceegarner@gmail.com
           </a>
