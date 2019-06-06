@@ -11,14 +11,27 @@ export default class Header extends React.Component {
           Experience a decentralized hackathon that fosters your creativity and
           rewards you with tangible and transparent feedback.
         </p>
-        <div className="mt-4">
-          <Button color="danger" size="lg" disabled>
-            Hack in TGU
-          </Button>
-          <Button color="danger" size="lg" className="ml-4" disabled>
-            Hack in SPS
+        <div>
+          <Button
+            color="danger"
+            size="lg"
+            target="blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSduswTNe07wUka91lgCXYyg1MNjW458QNYQtJh0v5t4TNqrOw/viewform?usp=sf_link"
+          >
+            Pre-Register
           </Button>
         </div>
+
+        {
+          //   <div className="mt-4">
+          //    <Button color="danger" size="lg" disabled>
+          //    Hack in TGU
+          //  </Button>
+          //  <Button color="danger" size="lg" className="ml-4" disabled>
+          //    Hack in SPS
+          //  </Button>
+          //</div>
+        }
       </header>
     );
   }
