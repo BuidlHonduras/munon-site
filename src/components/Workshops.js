@@ -4,6 +4,7 @@ import logo from "../logo.png";
 import erc20 from "../images/erc20.png";
 import ipfs from "../images/IPFS.png";
 import vue from "../images/vue.png";
+import angularcafe from "../images/angularcafe.jpeg";
 
 export default class Workshops extends React.Component {
   render() {
@@ -41,6 +42,38 @@ export default class Workshops extends React.Component {
                     <Button
                       className="btn btn-danger btn-block"
                       href="https://www.meetup.com/buidl-tegucigalpa/events/261807583/"
+                      target="blank"
+                    >
+                      Join
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="card mb-4 shadow-sm">
+                <img
+                  src={angularcafe}
+                  width="100%"
+                  height="225"
+                  background="#55595c"
+                  color="#eceeef"
+                  className="card-img-top "
+                  text="Thumbnail"
+                />
+                <div className="card-body">
+                  <h5 className="card-title mb-0">
+                    Angular Meetup Cafe - Nuestra primera DAPP
+                  </h5>
+                  <small className="text-muted">June 20 - SPS</small>
+                  <p className="card-text mt-2">
+                    En este meetup hablaremos de como crear nuestra aplicación
+                    descentralizada con angular + blockchain.
+                  </p>
+                  <div className="d-flex justify-content-between align-items-center">
+                    <Button
+                      className="btn btn-danger btn-block"
+                      href="https://www.facebook.com/events/598509827300304/"
                       target="blank"
                     >
                       Join
