@@ -1,5 +1,5 @@
 import React from "react";
-import swag from "../images/swag.jpg";
+import swag from "../images/swag.jpeg";
 import pot from "../images/pot.png";
 import team from "../images/team.jpg";
 
@@ -19,8 +19,8 @@ export default class Perks extends React.Component {
           <img src={swag} alt="..." className="rounded-circle swag" />
           <h3>Swag</h3>
           <p>
-            All participants will receive stickers, shirts and BUIDL Honduras
-            Tokens
+            All participants will receive stickers, swag (shirts, socks or caps)
+            and BUIDL Honduras Tokens
           </p>
         </div>
         <div className="col-sm">
