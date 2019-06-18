@@ -5,9 +5,10 @@ import cristian from "../images/contributors/cristian.jpg";
 import edax from "../images/contributors/edax.jpg";
 import franco from "../images/contributors/franco.jpg";
 import john from "../images/contributors/john.jpg";
+import juan from "../images/contributors/juan.jpeg";
+import maria from "../images/contributors/mariateresa.jpg";
 import oscar from "../images/contributors/oscar.jpeg";
 import robert from "../images/contributors/robert.jpeg";
-import juan from "../images/contributors/juan.jpeg";
 import uncle from "../images/uncle.jpg";
 
 export default class Donations extends React.Component {
@@ -85,14 +86,22 @@ export default class Donations extends React.Component {
             </div>
             <div className="col-sm">
               <img
+                src={maria}
+                alt="..."
+                className="horizontal img-thumbnail rounded-circle"
+              />
+              <p>Maria Morazán</p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm">
+              <img
                 src={oscar}
                 alt="..."
                 className="horizontal img-thumbnail rounded-circle"
               />
               <p>Oscar Presidente</p>
             </div>
-          </div>
-          <div className="row">
             <div className="col-sm">
               <img
                 src={robert}

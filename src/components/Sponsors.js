@@ -1,6 +1,6 @@
 import React from "react";
 import buidl from "../images/buidl-logo.png";
-import affogato from "../images/Affogato-logo-horizontal.png";
+import affogato from "../images/affogato.svg";
 import cocomfy from "../images/cocomfy-logo.jpeg";
 import widu from "../images/widu.png";
 import impact from "../images/impact.png";
