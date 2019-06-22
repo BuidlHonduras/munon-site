@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../logo.png";
 import { Button, Container } from "reactstrap";
 import Web3 from "web3";
+import rp from "request-promise";
 
 export default class Header extends React.Component {
   state = { pot: 0 };
@@ -13,6 +14,7 @@ export default class Header extends React.Component {
     );
 
     this.getBalance(web3);
+    this.getUSD();
   }
 
   async getBalance(web3) {
@@ -26,6 +28,31 @@ export default class Header extends React.Component {
       web3.utils.fromWei(sponsorsBalance + hackathonBalance, "ether")
     ).toFixed(4);
     this.setState({ pot });
+  }
+
+  async getUSD() {
+    const requestOptions = {
+      method: "GET",
+      uri: "https://pro-api.coinmarketcap.com/v1/tools/price-conversion",
+      qs: {
+        id: "1",
+        amount: "50",
+        convert: "GPB,LTC,USD"
+      },
+      headers: {
+        "X-CMC_PRO_API_KEY": "2b49785b-6dcc-486f-9eb7-71681bc5fcb0"
+      },
+      json: true,
+      gzip: true
+    };
+
+    rp(requestOptions)
+      .then(response => {
+        console.log("API call response:", response);
+      })
+      .catch(err => {
+        console.log("API call error:", err.message);
+      });
   }
 
   render() {
