@@ -1,13 +1,41 @@
 import React from "react";
 import logo from "../logo.png";
 import { Button, Container } from "reactstrap";
+import Web3 from "web3";
 
 export default class Header extends React.Component {
+  state = { pot: 0 };
+  componentDidMount() {
+    const web3 = new Web3(
+      "https://mainnet.infura.io/v3/e5c25f3dc3964544b151681ca6806c98",
+      null,
+      {}
+    );
+
+    this.getBalance(web3);
+  }
+
+  async getBalance(web3) {
+    const sponsorsBalance = await web3.eth.getBalance(
+      "0x3b95C834aa3DDC5E7B69e047Bd1eB1604B76f2C3"
+    );
+    const hackathonBalance = await web3.eth.getBalance(
+      "0x730bF3B67090511A64ABA060FbD2F7903536321E"
+    );
+    const pot = parseFloat(
+      web3.utils.fromWei(sponsorsBalance + hackathonBalance, "ether")
+    ).toFixed(4);
+    this.setState({ pot });
+  }
+
   render() {
     return (
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <h2 className="mt-4">
+          <b>Current Total Pot: {this.state.pot} ETH</b>
+        </h2>
+        <p className="mt-4">
           Experience a decentralized hackathon that fosters your creativity and
           rewards you with tangible and transparent feedback.
         </p>
@@ -35,7 +63,6 @@ export default class Header extends React.Component {
             </Button>
           </div>
         </Container>
-
         {
           //   <div className="mt-4">
           //    <Button color="danger" size="lg" disabled>
