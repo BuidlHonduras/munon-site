@@ -35,9 +35,9 @@ export default class Header extends React.Component {
       method: "GET",
       uri: "https://pro-api.coinmarketcap.com/v1/tools/price-conversion",
       qs: {
-        id: "1",
-        amount: "50",
-        convert: "GPB,LTC,USD"
+        id: "2",
+        amount: "1",
+        convert: "USD"
       },
       headers: {
         "X-CMC_PRO_API_KEY": "2b49785b-6dcc-486f-9eb7-71681bc5fcb0"
