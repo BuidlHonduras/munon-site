@@ -43,7 +43,7 @@ export default class Details extends React.Component {
               at the end, you would get 25 back, or 3 back depending on how the
               other participants perceive your work.
             </p>
-            <Button color="danger" size="lg" disabled href="#">
+            <Button color="danger" size="lg" href="https://dapp.munonhack.com">
               Join the Hacking
             </Button>
           </div>

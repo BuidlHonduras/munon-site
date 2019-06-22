@@ -5,6 +5,7 @@ import cocomfy from "../images/cocomfy-logo.jpeg";
 import widu from "../images/widu.png";
 import impact from "../images/impact.png";
 import lumina from "../images/lumina.png";
+import hub from "../images/hub.png";
 
 export default class Sponsors extends React.Component {
   render() {
@@ -46,6 +47,11 @@ export default class Sponsors extends React.Component {
             <div className="col-sm">
               <a href="https://www.lumminatech.com" target="blank">
                 <img src={lumina} alt="..." className="horizontal" />
+              </a>
+            </div>
+            <div className="col-sm">
+              <a href="#" target="blank">
+                <img src={hub} alt="..." className="horizontal" />
               </a>
             </div>
           </div>

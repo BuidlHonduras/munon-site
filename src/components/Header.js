@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../logo.png";
-import { Button } from "reactstrap";
+import { Button, Container } from "reactstrap";
 
 export default class Header extends React.Component {
   render() {
@@ -11,16 +11,30 @@ export default class Header extends React.Component {
           Experience a decentralized hackathon that fosters your creativity and
           rewards you with tangible and transparent feedback.
         </p>
-        <div>
-          <Button
-            color="danger"
-            size="lg"
-            target="blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSduswTNe07wUka91lgCXYyg1MNjW458QNYQtJh0v5t4TNqrOw/viewform?usp=sf_link"
-          >
-            Pre-Register
-          </Button>
-        </div>
+        <Container className="row pt-4 mt-2 pb-4">
+          <div className="col-md-6 col-xs-12 mb-4">
+            <Button
+              color="danger"
+              className="w-75"
+              size="lg"
+              target="blank"
+              href="https://dapp.munonhack.com"
+            >
+              Register
+            </Button>
+          </div>
+          <div className="col-md-6 col-xs-12">
+            <Button
+              color="danger"
+              className="w-75"
+              size="lg"
+              target="blank"
+              href="https://dev.to/crisgarner/como-registrarse-en-el-munon-22mi"
+            >
+              Registration Tutorial
+            </Button>
+          </div>
+        </Container>
 
         {
           //   <div className="mt-4">
