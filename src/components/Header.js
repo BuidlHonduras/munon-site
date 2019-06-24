@@ -5,7 +5,7 @@ import Web3 from "web3";
 import axios from "axios";
 
 export default class Header extends React.Component {
-  state = { pot: 0, usdBalance: 0 };
+  state = { pot: 0, usdBalance: 0, totalPot: 0 };
   componentDidMount() {
     const web3 = new Web3(
       "https://mainnet.infura.io/v3/e5c25f3dc3964544b151681ca6806c98",
@@ -26,7 +26,10 @@ export default class Header extends React.Component {
     const pot = parseFloat(
       web3.utils.fromWei(sponsorsBalance + hackathonBalance, "ether")
     ).toFixed(4);
-    this.setState({ pot });
+    const totalPot = parseFloat(
+      web3.utils.fromWei(sponsorsBalance + hackathonBalance, "ether")
+    );
+    this.setState({ pot, totalPot });
     this.getUSD();
   }
 
@@ -37,10 +40,9 @@ export default class Header extends React.Component {
     };
 
     const response = await axios(requestOptions);
-    console.log(this.state.pot);
-    const usdBalance = parseFloat(this.state.pot * response.data.USD).toFixed(
-      2
-    );
+    const usdBalance = parseFloat(
+      this.state.totalPot * response.data.USD
+    ).toFixed(2);
     this.setState({ usdBalance });
   }
 
