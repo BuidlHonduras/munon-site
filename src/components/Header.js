@@ -21,14 +21,17 @@ export default class Header extends React.Component {
       "0x3b95C834aa3DDC5E7B69e047Bd1eB1604B76f2C3"
     );
     const hackathonBalance = await web3.eth.getBalance(
-      "0x730bF3B67090511A64ABA060FbD2F7903536321E"
+      "0x380a9a27227d28E47F412fdBB073C9e1A049E0B1"
     );
+    console.log(sponsorsBalance);
+    console.log(hackathonBalance);
     const pot = parseFloat(
       web3.utils.fromWei(sponsorsBalance + hackathonBalance, "ether")
     ).toFixed(4);
     const totalPot = parseFloat(
       web3.utils.fromWei(sponsorsBalance + hackathonBalance, "ether")
     );
+
     this.setState({ pot, totalPot });
     this.getUSD();
   }
