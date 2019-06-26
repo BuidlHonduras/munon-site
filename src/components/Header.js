@@ -17,20 +17,18 @@ export default class Header extends React.Component {
   }
 
   async getBalance(web3) {
-    const sponsorsBalance = await web3.eth.getBalance(
+    let sponsorsBalance = await web3.eth.getBalance(
       "0x3b95C834aa3DDC5E7B69e047Bd1eB1604B76f2C3"
     );
-    const hackathonBalance = await web3.eth.getBalance(
+    let hackathonBalance = await web3.eth.getBalance(
       "0x380a9a27227d28E47F412fdBB073C9e1A049E0B1"
     );
+    sponsorsBalance = web3.utils.fromWei(sponsorsBalance, "ether");
+    hackathonBalance = web3.utils.fromWei(hackathonBalance, "ether");
     console.log(sponsorsBalance);
     console.log(hackathonBalance);
-    const pot = parseFloat(
-      web3.utils.fromWei(sponsorsBalance + hackathonBalance, "ether")
-    ).toFixed(4);
-    const totalPot = parseFloat(
-      web3.utils.fromWei(sponsorsBalance + hackathonBalance, "ether")
-    );
+    const pot = Number(sponsorsBalance) + Number(hackathonBalance);
+    const totalPot = Number(sponsorsBalance) + Number(hackathonBalance);
 
     this.setState({ pot, totalPot });
     this.getUSD();
