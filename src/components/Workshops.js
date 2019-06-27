@@ -109,8 +109,9 @@ export default class Workshops extends React.Component {
                       className="btn btn-danger btn-block"
                       href="https://www.facebook.com/events/598509827300304/"
                       target="blank"
+                      disabled
                     >
-                      Register
+                      Finished
                     </Button>
                   </div>
                 </div>
@@ -140,8 +141,9 @@ export default class Workshops extends React.Component {
                       className="btn btn-danger btn-block"
                       href="https://www.meetup.com/buidl-tegucigalpa/events/262420004/"
                       target="blank"
+                      disabled
                     >
-                      Register
+                      Finished
                     </Button>
                   </div>
                 </div>
