@@ -25,9 +25,7 @@ export default class Header extends React.Component {
     );
     sponsorsBalance = web3.utils.fromWei(sponsorsBalance, "ether");
     hackathonBalance = web3.utils.fromWei(hackathonBalance, "ether");
-    console.log(sponsorsBalance);
-    console.log(hackathonBalance);
-    const pot = Number(sponsorsBalance) + Number(hackathonBalance);
+    const pot = (Number(sponsorsBalance) + Number(hackathonBalance)).toFixed(2);
     const totalPot = Number(sponsorsBalance) + Number(hackathonBalance);
 
     this.setState({ pot, totalPot });
