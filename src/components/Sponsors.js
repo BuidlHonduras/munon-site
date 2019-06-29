@@ -6,6 +6,8 @@ import widu from "../images/widu.png";
 import impact from "../images/impact.png";
 import lumina from "../images/lumina.png";
 import hub from "../images/hub.png";
+import walletConnect from "../images/walletconnect.svg";
+import web3Connect from "../images/web3connect-logo.png";
 
 export default class Sponsors extends React.Component {
   render() {
@@ -52,6 +54,19 @@ export default class Sponsors extends React.Component {
             <div className="col-sm">
               <a href="#" target="blank">
                 <img src={hub} alt="..." className="horizontal" />
+              </a>
+            </div>
+            <div className="col-sm">
+              <a href="https://walletconnect.org/" target="blank">
+                <img src={walletConnect} alt="..." className="horizontal" />
+              </a>
+            </div>
+            <div className="col-sm">
+              <a
+                href="https://github.com/web3connect/web3connect"
+                target="blank"
+              >
+                <img src={web3Connect} alt="..." className="vertical" />
               </a>
             </div>
           </div>

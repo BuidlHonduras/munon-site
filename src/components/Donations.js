@@ -6,6 +6,7 @@ import edax from "../images/contributors/edax.jpg";
 import franco from "../images/contributors/franco.jpg";
 import john from "../images/contributors/john.jpg";
 import juan from "../images/contributors/juan.jpeg";
+import nelson from "../images/contributors/nelson.jpg";
 import maria from "../images/contributors/mariateresa.jpg";
 import oscar from "../images/contributors/oscar.jpeg";
 import robert from "../images/contributors/robert.jpeg";
@@ -86,14 +87,23 @@ export default class Donations extends React.Component {
             </div>
             <div className="col-sm">
               <img
+                src={nelson}
+                alt="..."
+                className="horizontal img-thumbnail rounded-circle"
+              />
+              <p>Nelson Milla</p>
+            </div>
+          </div>
+          <div className="row">
+            {" "}
+            <div className="col-sm">
+              <img
                 src={maria}
                 alt="..."
                 className="horizontal img-thumbnail rounded-circle"
               />
               <p>Maria Morazán</p>
             </div>
-          </div>
-          <div className="row">
             <div className="col-sm">
               <img
                 src={oscar}
