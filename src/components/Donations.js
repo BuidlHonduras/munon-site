@@ -9,7 +9,7 @@ import juan from "../images/contributors/juan.jpeg";
 import nelson from "../images/contributors/nelson.jpg";
 import maria from "../images/contributors/mariateresa.jpg";
 import oscar from "../images/contributors/oscar.jpeg";
-import robert from "../images/contributors/robert.jpeg";
+import robert from "../images/contributors/robert.jpg";
 import uncle from "../images/uncle.jpg";
 
 export default class Donations extends React.Component {

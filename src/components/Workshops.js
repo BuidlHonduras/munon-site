@@ -175,8 +175,9 @@ export default class Workshops extends React.Component {
                       className="btn btn-danger btn-block"
                       href="https://www.meetup.com/buidl-tegucigalpa/events/261931532/"
                       target="blank"
+                      disabled
                     >
-                      Register
+                      Finished
                     </Button>
                   </div>
                 </div>
