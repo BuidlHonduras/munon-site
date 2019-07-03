@@ -2,10 +2,12 @@ import React from "react";
 import buidl from "../images/buidl-logo.png";
 import affogato from "../images/affogato.svg";
 import cocomfy from "../images/cocomfy-logo.jpeg";
+import hdc from "../images/hdc.jpeg";
 import widu from "../images/widu.png";
 import impact from "../images/impact.png";
 import lumina from "../images/lumina.png";
 import hub from "../images/hub.png";
+import bcei from "../images/bcei.png";
 import walletConnect from "../images/walletconnect.svg";
 import web3Connect from "../images/web3connect-logo.png";
 
@@ -67,6 +69,16 @@ export default class Sponsors extends React.Component {
                 target="blank"
               >
                 <img src={web3Connect} alt="..." className="vertical" />
+              </a>
+            </div>
+            <div className="col-sm">
+              <a href="http://bcei.hn/servicios/" target="blank">
+                <img src={bcei} alt="..." className="horizontal" />
+              </a>
+            </div>
+            <div className="col-sm">
+              <a href="https://hondurasdigitalchallenge.com/" target="blank">
+                <img src={hdc} alt="..." className="horizontal" />
               </a>
             </div>
           </div>
