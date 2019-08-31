@@ -41,11 +41,11 @@ export default class Navigation extends React.Component {
                   Perks
                 </NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink href="#workshops" className="primary">
                   Workshops
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLink href="#sponsors" className="primary">
                   Sponsors
@@ -53,7 +53,7 @@ export default class Navigation extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://github.com/Turupawn/HackathonMunon"
+                  href="https://github.com/BuidlHonduras/HackathonMunon"
                   className="primary"
                   target="blank"
                 >
