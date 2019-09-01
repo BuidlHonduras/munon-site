@@ -3,6 +3,7 @@ import logo from "../logo.png";
 import { Button, Container } from "reactstrap";
 import Web3 from "web3";
 import axios from "axios";
+import Countdown from "react-countdown-now";
 
 export default class Header extends React.Component {
   state = { pot: 0, usdBalance: 0, totalPot: 0 };
@@ -50,8 +51,11 @@ export default class Header extends React.Component {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2 className="mt-4">
-          <b>Current Total Pot: {this.state.pot} ETH</b>
-          <br /> <small> or ${this.state.usdBalance}</small>
+          <b>Days until Hackathon:</b>{" "}
+          <Countdown date={"Sat, 07 Sept 2019 01:02:03"} />
+          <br></br>
+          {/* <b>Current Total Pot: {this.state.pot} ETH</b>
+          <br /> <small> or ${this.state.usdBalance}</small> */}
         </h2>
         <p className="mt-4">
           Experience a decentralized hackathon that fosters your creativity and
