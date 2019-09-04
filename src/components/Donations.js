@@ -4,6 +4,7 @@ import antonio from "../images/contributors/antonio.jpg";
 import cristian from "../images/contributors/cristian.jpg";
 import edax from "../images/contributors/edax.jpg";
 import franco from "../images/contributors/franco.jpg";
+import isaac from "../images/contributors/isaac.jpeg";
 import john from "../images/contributors/john.jpg";
 import juan from "../images/contributors/juan.jpeg";
 import nelson from "../images/contributors/nelson.jpg";
@@ -71,6 +72,14 @@ export default class Donations extends React.Component {
             </div>
             <div className="col-sm">
               <img
+                src={isaac}
+                alt="..."
+                className="horizontal img-thumbnail rounded-circle"
+              />
+              <p>Isaac Martínez</p>
+            </div>
+            <div className="col-sm">
+              <img
                 src={john}
                 alt="..."
                 className="horizontal img-thumbnail rounded-circle"
@@ -85,6 +94,8 @@ export default class Donations extends React.Component {
               />
               <p>Juan Mayen</p>
             </div>
+          </div>
+          <div className="row">
             <div className="col-sm">
               <img
                 src={nelson}
@@ -93,9 +104,6 @@ export default class Donations extends React.Component {
               />
               <p>Nelson Milla</p>
             </div>
-          </div>
-          <div className="row">
-            {" "}
             <div className="col-sm">
               <img
                 src={maria}
@@ -120,6 +128,8 @@ export default class Donations extends React.Component {
               />
               <p>Robert Mudgett</p>
             </div>
+          </div>
+          <div className="row">
             <div className="col-sm">
               <img
                 src={uncle}

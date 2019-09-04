@@ -54,8 +54,8 @@ export default class Header extends React.Component {
           <b>Days until Hackathon:</b>{" "}
           <Countdown date={"Sat, 07 Sept 2019 01:02:03"} />
           <br></br>
-          {/* <b>Current Total Pot: {this.state.pot} ETH</b>
-          <br /> <small> or ${this.state.usdBalance}</small> */}
+          <b>Current Total Pot:</b> {this.state.pot} ETH
+          <br /> <small> equivalent to ${this.state.usdBalance}</small>
         </h2>
         <p className="mt-4">
           Experience a decentralized hackathon that fosters your creativity and
